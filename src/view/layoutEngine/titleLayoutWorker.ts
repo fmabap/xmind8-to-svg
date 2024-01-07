@@ -44,10 +44,14 @@ export default class TitleLayoutWorker {
 
     text = this._getTransformedText(fontInfo.textTransform, text)
 
+    if (text == undefined) {
+      text = "";
+    }
+
     let nodesArr = str2NodesArr(text, fontInfo)
     nodesArr = nodesArr.map(nodes => {
       if (nodes.length > 0) { return nodes }
-      return [{content: '', style: fontInfo}]
+      return [{ content: '', style: fontInfo }]
     })
 
     const lineHeight = Math.floor(Number.parseInt(fontInfo.fontSize || '0') * 1.34)
@@ -73,7 +77,7 @@ export default class TitleLayoutWorker {
   }
 
   private _getTransformedText(textTransform: string, text: string) {
-    switch(textTransform) {
+    switch (textTransform) {
       case TextTransform.MANUAL:
         return text
       case TextTransform.CAPITALIZE:
@@ -82,11 +86,11 @@ export default class TitleLayoutWorker {
         })
       case TextTransform.UPPER_CASE:
         return text.toUpperCase()
-      case TextTransform.LOWER_CASE: 
+      case TextTransform.LOWER_CASE:
         return text.toLowerCase()
       default:
         return text
     }
   }
-  
+
 }

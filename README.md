@@ -4,9 +4,11 @@ This command line based program converts a XMind 8 file to a SVG file based on [
 
 I don't know why the xmind-viewer has been deprecated. They say: "Never ever use it in a production environment!".
 
-It looks like that it works fine with XMind 8 files.
+It looks like that it works with XMind 8 files in most cases.
 
 I had to adjust a little bit the coding of the viewer because the require command in the viewer leads to errors. I changed it to the import command.
+
+I fixed a bug in the viewer: If there is a topic without text then it broke in the titleLayoutWorker.ts work function.
 
 The program converts only the first sheet of the XMind file.
 
