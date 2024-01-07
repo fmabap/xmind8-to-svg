@@ -8,7 +8,11 @@
         "declaration": true,
         "declarationMap": true,
         "esModuleInterop": true,
-        "moduleResolution": "Node10"
+        "moduleResolution": "Node10",
+    },
+    "tsc-alias": {
+        "resolveFullPaths": true,
+        "verbose": false
     },
     "include": [
         "src"
