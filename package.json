@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@svgdotjs/svg.js": "^3.0.16",
-    "@types/jszip": "^3.1.6",
     "canvas": "^2.6.1",
     "fix-esm": "^1.0.1",
     "fontkit": "^2.0.2",
