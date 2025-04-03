@@ -1,23 +1,19 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "outDir": "dist",
-        "rootDir": "src",
-        "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true,
-        "esModuleInterop": true,
-        "moduleResolution": "Node10",
-    },
-    "tsc-alias": {
-        "resolveFullPaths": true,
-        "verbose": false
-    },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node10"
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
